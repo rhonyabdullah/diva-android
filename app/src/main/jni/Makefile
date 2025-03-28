@@ -34,6 +34,7 @@
 all:
 	ndk-build
 	rm -rf ../jniLibs/*
+	mkdir -p ../jniLibs
 	cp -r ../libs/* ../jniLibs/
 clean:
 	ndk-build clean
